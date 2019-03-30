@@ -9669,8 +9669,8 @@ http://www.invensense.com&lt;p&gt;
 </classes>
 <parts>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10K"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10K"/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10K"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="3.3K"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="3.3K"/>
 <part name="U$2" library="L298_Motor_Driver_Lib_ECE5780" deviceset="LM75A-SOIC8" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="TOM_BECNEL" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="Tom Becnel"/>
@@ -9693,8 +9693,6 @@ http://www.invensense.com&lt;p&gt;
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1 uF"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10 nF"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="0"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="10K"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
 </parts>
@@ -9772,8 +9770,8 @@ by ground in layout</text>
 <instance part="SUPPLY8" gate="GND" x="172.72" y="71.12" smashed="yes">
 <attribute name="VALUE" x="170.815" y="67.945" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="GND" x="165.1" y="43.18" smashed="yes">
-<attribute name="VALUE" x="163.195" y="40.005" size="1.778" layer="96"/>
+<instance part="SUPPLY7" gate="GND" x="165.1" y="40.64" smashed="yes">
+<attribute name="VALUE" x="163.195" y="37.465" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY9" gate="GND" x="119.38" y="58.42" smashed="yes">
 <attribute name="VALUE" x="112.395" y="57.785" size="1.778" layer="96"/>
@@ -9800,14 +9798,6 @@ by ground in layout</text>
 <instance part="C7" gate="G$1" x="175.26" y="50.8" smashed="yes">
 <attribute name="NAME" x="176.784" y="51.181" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.784" y="46.101" size="1.778" layer="96"/>
-</instance>
-<instance part="R1" gate="G$1" x="104.14" y="55.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="107.95" y="54.3814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="107.95" y="59.182" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R2" gate="G$1" x="96.52" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="95.0214" y="57.15" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="99.822" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP1" gate="A" x="38.1" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.45" y="75.565" size="1.778" layer="95" rot="R180"/>
@@ -9900,13 +9890,14 @@ by ground in layout</text>
 <junction x="167.64" y="71.12"/>
 </segment>
 <segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="165.1" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="48.26" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <pinref part="IC1" gate="G$1" pin="GND@1"/>
 <wire x1="162.56" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="50.8" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="165.1" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="48.26" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<junction x="165.1" y="48.26"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="AD0"/>
@@ -10019,14 +10010,17 @@ by ground in layout</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VLOGIC"/>
-<wire x1="162.56" y1="53.34" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 <label x="170.18" y="53.34" size="1.778" layer="95"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="66.04" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="96.52" y="68.58" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="53.34" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="55.88" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="53.34" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
+<junction x="167.64" y="53.34"/>
+<junction x="167.64" y="55.88"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="93.98" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
@@ -10046,12 +10040,6 @@ by ground in layout</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="127" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
-<label x="170.18" y="55.88" size="1.778" layer="95"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="55.88" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
@@ -10148,21 +10136,11 @@ by ground in layout</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="INT"/>
-<wire x1="121.92" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="IMU_INT" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
-<label x="83.82" y="55.88" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<junction x="96.52" y="55.88"/>
+<label x="101.6" y="55.88" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="INT"/>
+<wire x1="111.76" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
