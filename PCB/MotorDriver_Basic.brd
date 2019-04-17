@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1842,7 +1842,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U1" pad="PAD1"/>
 <contactref element="U1" pad="PAD"/>
 <contactref element="U1" pad="6"/>
-<contactref element="U1" pad="12"/>
+<contactref element="U1" pad="11"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="IC1" pad="6"/>
 <contactref element="IC1" pad="7"/>
@@ -1875,8 +1875,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="11.95" y1="27.37" x2="11.938" y2="27.358" width="0.2032" layer="1"/>
 <wire x1="11.938" y1="27.358" x2="11.938" y2="26.67" width="0.2032" layer="1"/>
 <wire x1="12.7" y1="25.908" x2="11.938" y2="26.67" width="0.2032" layer="1"/>
-<wire x1="6.33" y1="24.196" x2="6.43" y2="24.296" width="0.2032" layer="1"/>
-<wire x1="6.43" y1="24.296" x2="6.43" y2="24.896" width="0.2032" layer="1"/>
 <wire x1="3.83" y1="26.096" x2="3.73" y2="25.996" width="0.2032" layer="1"/>
 <wire x1="3.73" y1="25.996" x2="3.73" y2="25.396" width="0.2032" layer="1"/>
 <wire x1="5.08" y1="25.146" x2="3.98" y2="25.146" width="0.2032" layer="1"/>
@@ -1890,6 +1888,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="12.7" y1="25.4" x2="12.7" y2="25.658" width="0.2032" layer="1"/>
 <wire x1="12.7" y1="25.658" x2="12.95" y2="25.908" width="0.2032" layer="1"/>
 <wire x1="12.7" y1="25.4" x2="12.7" y2="25.908" width="0.2032" layer="1"/>
+<wire x1="5.83" y1="24.196" x2="5.83" y2="20.71" width="0.1524" layer="1"/>
+<wire x1="5.83" y1="20.71" x2="7.366" y2="19.174" width="0.1524" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U$2" pad="1"/>
@@ -1940,7 +1940,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="21.59" y1="23.241" x2="21.463" y2="23.114" width="0.2032" layer="1"/>
 </signal>
 <signal name="VCC">
-<contactref element="U1" pad="11"/>
+<contactref element="U1" pad="12"/>
 <contactref element="C3" pad="1"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R4" pad="2"/>
@@ -1968,16 +1968,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="9.926" y1="26.65" x2="10.73" y2="26.65" width="0.3048" layer="1"/>
 <wire x1="9.398" y1="27.178" x2="9.926" y2="26.65" width="0.3048" layer="1"/>
 <wire x1="9.398" y1="27.94" x2="7.366" y2="25.908" width="0.3048" layer="1"/>
-<wire x1="7.366" y1="21.844" x2="7.366" y2="22.352" width="0.3048" layer="1"/>
-<wire x1="7.366" y1="22.352" x2="7.366" y2="25.908" width="0.3048" layer="1"/>
+<wire x1="7.366" y1="21.844" x2="7.366" y2="25.908" width="0.3048" layer="1"/>
 <wire x1="23.114" y1="34.928" x2="19.806" y2="31.62" width="0.508" layer="1"/>
 <wire x1="19.806" y1="31.62" x2="19.05" y2="31.62" width="0.508" layer="1"/>
-<wire x1="5.83" y1="24.196" x2="5.842" y2="23.368" width="0.3048" layer="1"/>
-<wire x1="5.842" y1="23.368" x2="7.366" y2="22.352" width="0.3048" layer="1"/>
 <wire x1="7.366" y1="21.974" x2="10.284" y2="19.056" width="0.3048" layer="1"/>
 <wire x1="10.284" y1="19.056" x2="10.284" y2="13.462" width="0.3048" layer="1"/>
 <wire x1="10.284" y1="13.462" x2="10.284" y2="9.398" width="0.3048" layer="1"/>
 <wire x1="7.366" y1="21.974" x2="7.366" y2="21.844" width="0.508" layer="1"/>
+<wire x1="7.366" y1="21.974" x2="6.33" y2="23.01" width="0.1524" layer="1"/>
+<wire x1="6.33" y1="23.01" x2="6.33" y2="24.196" width="0.1524" layer="1"/>
 </signal>
 <signal name="VM">
 <contactref element="C1" pad="1"/>
