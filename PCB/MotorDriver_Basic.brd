@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1888,8 +1888,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="12.7" y1="25.4" x2="12.7" y2="25.658" width="0.2032" layer="1"/>
 <wire x1="12.7" y1="25.658" x2="12.95" y2="25.908" width="0.2032" layer="1"/>
 <wire x1="12.7" y1="25.4" x2="12.7" y2="25.908" width="0.2032" layer="1"/>
-<wire x1="5.83" y1="24.196" x2="5.83" y2="20.71" width="0.1524" layer="1"/>
-<wire x1="5.83" y1="20.71" x2="7.366" y2="19.174" width="0.1524" layer="1"/>
+<wire x1="5.83" y1="20.71" x2="5.83" y2="24.196" width="0.2032" layer="1"/>
+<wire x1="7.366" y1="19.174" x2="5.83" y2="20.71" width="0.2032" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U$2" pad="1"/>
@@ -1968,15 +1968,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="9.926" y1="26.65" x2="10.73" y2="26.65" width="0.3048" layer="1"/>
 <wire x1="9.398" y1="27.178" x2="9.926" y2="26.65" width="0.3048" layer="1"/>
 <wire x1="9.398" y1="27.94" x2="7.366" y2="25.908" width="0.3048" layer="1"/>
-<wire x1="7.366" y1="21.844" x2="7.366" y2="25.908" width="0.3048" layer="1"/>
+<wire x1="7.366" y1="21.844" x2="7.366" y2="22.436665625" width="0.3048" layer="1"/>
+<wire x1="7.366" y1="22.436665625" x2="7.366" y2="25.908" width="0.3048" layer="1"/>
 <wire x1="23.114" y1="34.928" x2="19.806" y2="31.62" width="0.508" layer="1"/>
 <wire x1="19.806" y1="31.62" x2="19.05" y2="31.62" width="0.508" layer="1"/>
+<wire x1="7.366" y1="22.436665625" x2="6.35" y2="23.114" width="0.3048" layer="1"/>
 <wire x1="7.366" y1="21.974" x2="10.284" y2="19.056" width="0.3048" layer="1"/>
 <wire x1="10.284" y1="19.056" x2="10.284" y2="13.462" width="0.3048" layer="1"/>
 <wire x1="10.284" y1="13.462" x2="10.284" y2="9.398" width="0.3048" layer="1"/>
 <wire x1="7.366" y1="21.974" x2="7.366" y2="21.844" width="0.508" layer="1"/>
-<wire x1="7.366" y1="21.974" x2="6.33" y2="23.01" width="0.1524" layer="1"/>
-<wire x1="6.33" y1="23.01" x2="6.33" y2="24.196" width="0.1524" layer="1"/>
+<wire x1="6.35" y1="24.176" x2="6.33" y2="24.196" width="0.1524" layer="1"/>
+<wire x1="6.35" y1="23.114" x2="6.35" y2="24.176" width="0.3048" layer="1"/>
 </signal>
 <signal name="VM">
 <contactref element="C1" pad="1"/>
