@@ -9565,110 +9565,6 @@ http://www.invensense.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="ESP8266-ESP12">
-<packages>
-<package name="ESP8266-ESP12">
-<wire x1="0" y1="0" x2="16" y2="0" width="0.127" layer="21"/>
-<wire x1="16" y1="0" x2="16" y2="24" width="0.127" layer="21"/>
-<wire x1="16" y1="24" x2="0" y2="24" width="0.127" layer="21"/>
-<wire x1="0" y1="24" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="8" x="0.4" y="1.48" dx="2.5" dy="1" layer="1"/>
-<smd name="7" x="0.4" y="3.48" dx="2.5" dy="1" layer="1"/>
-<smd name="6" x="0.4" y="5.48" dx="2.5" dy="1" layer="1"/>
-<smd name="5" x="0.4" y="7.48" dx="2.5" dy="1" layer="1"/>
-<smd name="4" x="0.4" y="9.48" dx="2.5" dy="1" layer="1"/>
-<smd name="3" x="0.4" y="11.48" dx="2.5" dy="1" layer="1"/>
-<smd name="2" x="0.4" y="13.48" dx="2.5" dy="1" layer="1"/>
-<smd name="1" x="0.4" y="15.48" dx="2.5" dy="1" layer="1"/>
-<smd name="15" x="15.6" y="1.48" dx="2.5" dy="1" layer="1"/>
-<smd name="16" x="15.6" y="3.48" dx="2.5" dy="1" layer="1"/>
-<smd name="17" x="15.6" y="5.48" dx="2.5" dy="1" layer="1"/>
-<smd name="18" x="15.6" y="7.48" dx="2.5" dy="1" layer="1"/>
-<smd name="19" x="15.6" y="9.48" dx="2.5" dy="1" layer="1"/>
-<smd name="20" x="15.6" y="11.48" dx="2.5" dy="1" layer="1"/>
-<smd name="21" x="15.6" y="13.48" dx="2.5" dy="1" layer="1"/>
-<smd name="22" x="15.6" y="15.48" dx="2.5" dy="1" layer="1"/>
-<text x="5" y="2" size="1.27" layer="21" rot="R90">&gt;NAME</text>
-<text x="4.2" y="20" size="1.27" layer="21">ESP-12-F</text>
-<rectangle x1="0" y1="17.8" x2="16" y2="24" layer="39"/>
-<smd name="9" x="3" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="10" x="5" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="11" x="7" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="12" x="9" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="13" x="11" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="14" x="13" y="0" dx="1" dy="1.8" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ESP12">
-<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="GPIO15" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="GPIO2" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="GPIO0" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="GPIO4" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="GPIO5" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="RXD" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="TXD" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="RST" x="-22.86" y="10.16" length="middle"/>
-<pin name="ADC" x="-22.86" y="7.62" length="middle"/>
-<pin name="EN" x="-22.86" y="5.08" length="middle"/>
-<pin name="GPIO16" x="-22.86" y="2.54" length="middle"/>
-<pin name="GPIO14" x="-22.86" y="0" length="middle"/>
-<pin name="GPIO12" x="-22.86" y="-2.54" length="middle"/>
-<pin name="GPIO13" x="-22.86" y="-5.08" length="middle"/>
-<pin name="VCC" x="-22.86" y="-7.62" length="middle"/>
-<wire x1="-17.78" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="12.7" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
-<text x="-17.78" y="15.24" size="1.27" layer="94">ESP8266_ESP-12-F</text>
-<pin name="CS0" x="-10.16" y="-22.86" length="middle" rot="R90"/>
-<pin name="MISO" x="-7.62" y="-22.86" length="middle" rot="R90"/>
-<pin name="GPIO9" x="-5.08" y="-22.86" length="middle" rot="R90"/>
-<pin name="GPIO10" x="-2.54" y="-22.86" length="middle" rot="R90"/>
-<pin name="MOSI" x="0" y="-22.86" length="middle" rot="R90"/>
-<pin name="SCLK" x="2.54" y="-22.86" length="middle" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ESP8266_ESP-12">
-<gates>
-<gate name="G$1" symbol="ESP12" x="5.08" y="0"/>
-</gates>
-<devices>
-<device name="" package="ESP8266-ESP12">
-<connects>
-<connect gate="G$1" pin="ADC" pad="2"/>
-<connect gate="G$1" pin="CS0" pad="9"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="15"/>
-<connect gate="G$1" pin="GPIO0" pad="18"/>
-<connect gate="G$1" pin="GPIO10" pad="12"/>
-<connect gate="G$1" pin="GPIO12" pad="6"/>
-<connect gate="G$1" pin="GPIO13" pad="7"/>
-<connect gate="G$1" pin="GPIO14" pad="5"/>
-<connect gate="G$1" pin="GPIO15" pad="16"/>
-<connect gate="G$1" pin="GPIO16" pad="4"/>
-<connect gate="G$1" pin="GPIO2" pad="17"/>
-<connect gate="G$1" pin="GPIO4" pad="19"/>
-<connect gate="G$1" pin="GPIO5" pad="20"/>
-<connect gate="G$1" pin="GPIO9" pad="11"/>
-<connect gate="G$1" pin="MISO" pad="10"/>
-<connect gate="G$1" pin="MOSI" pad="13"/>
-<connect gate="G$1" pin="RST" pad="1"/>
-<connect gate="G$1" pin="RXD" pad="21"/>
-<connect gate="G$1" pin="SCLK" pad="14"/>
-<connect gate="G$1" pin="TXD" pad="22"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="silicon_labs">
 <packages>
 <package name="QFN-24-4X4">
@@ -13993,6 +13889,93 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ESP8266">
+<packages>
+<package name="ESP8266-ESP12">
+<wire x1="0" y1="0" x2="16" y2="0" width="0.127" layer="21"/>
+<wire x1="16" y1="0" x2="16" y2="24" width="0.127" layer="21"/>
+<wire x1="16" y1="24" x2="0" y2="24" width="0.127" layer="21"/>
+<wire x1="0" y1="24" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="8" x="0" y="1.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="7" x="0" y="3.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="6" x="0" y="5.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="5" x="0" y="7.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="4" x="0" y="9.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="3" x="0" y="11.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="2" x="0" y="13.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="1" x="0" y="15.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="9" x="16" y="1.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="10" x="16" y="3.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="11" x="16" y="5.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="12" x="16" y="7.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="13" x="16" y="9.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="14" x="16" y="11.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="15" x="16" y="13.5" dx="2.6" dy="1.1" layer="1"/>
+<smd name="16" x="16" y="15.5" dx="2.6" dy="1.1" layer="1"/>
+<text x="5" y="2" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="4.708" y="20" size="1.27" layer="21">ESP-12S</text>
+<rectangle x1="0" y1="17.8" x2="16" y2="24" layer="39"/>
+<circle x="1" y="17" radius="0.565684375" width="0.1524" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP12">
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO15" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO0" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GPIO4" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO5" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="RXD" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="TXD" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="RST" x="-22.86" y="10.16" length="middle"/>
+<pin name="ADC" x="-22.86" y="7.62" length="middle"/>
+<pin name="EN" x="-22.86" y="5.08" length="middle"/>
+<pin name="GPIO16" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO14" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO12" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO13" x="-22.86" y="-5.08" length="middle"/>
+<pin name="VCC" x="-22.86" y="-7.62" length="middle"/>
+<wire x1="-17.78" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<text x="-17.78" y="15.24" size="1.27" layer="94">ESP8266_ESP-12-F</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ESP8266_ESP-12">
+<gates>
+<gate name="G$1" symbol="ESP12" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP8266-ESP12">
+<connects>
+<connect gate="G$1" pin="ADC" pad="2"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="GPIO0" pad="12"/>
+<connect gate="G$1" pin="GPIO12" pad="6"/>
+<connect gate="G$1" pin="GPIO13" pad="7"/>
+<connect gate="G$1" pin="GPIO14" pad="5"/>
+<connect gate="G$1" pin="GPIO15" pad="10"/>
+<connect gate="G$1" pin="GPIO16" pad="4"/>
+<connect gate="G$1" pin="GPIO2" pad="11"/>
+<connect gate="G$1" pin="GPIO4" pad="13"/>
+<connect gate="G$1" pin="GPIO5" pad="14"/>
+<connect gate="G$1" pin="RST" pad="1"/>
+<connect gate="G$1" pin="RXD" pad="15"/>
+<connect gate="G$1" pin="TXD" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14027,7 +14010,7 @@ Source: www.kingbright.com</description>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10 nF"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
-<part name="U$1" library="ESP8266-ESP12" deviceset="ESP8266_ESP-12" device=""/>
+<part name="U$1" library="ESP8266" deviceset="ESP8266_ESP-12" device=""/>
 <part name="U2" library="silicon_labs" deviceset="CP2104" device="-F03-GM"/>
 <part name="Q1" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="NPN-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1"/>
 <part name="Q2" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="PNP-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1"/>
